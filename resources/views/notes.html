@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den @ Notes</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/notes.css">
+</head>
+<body>
+    <main>
+        <section class="main notes-page">
+            <header class="notes-header">
+                <h1>Notes</h1>
+                <p>Notes are stored as Markdown files. Open a note to read its source.</p>
+            </header>
+
+            <nav class="topic-nav" aria-label="Note topics">
+                <a href="#development">Dev</a>
+                <a href="#reading">Reading</a>
+                <a href="#ideas">Ideas</a>
+            </nav>
+
+            <div class="topic-grid">
+                <section class="topic-card" id="development" aria-labelledby="development-title">
+                    <h2 id="development-title">Dev</h2>
+                    <article class="note-card">
+                        <p class="note-date">2026-10-24</p>
+                        <h3><a href="../notes/dev/2026-10-24-exemplo.md">My first Markdown note</a></h3>
+                        <p>A small example showing how to add a note to the site.</p>
+                    </article>
+                </section>
+
+                <section class="topic-card" id="reading" aria-labelledby="reading-title">
+                    <h2 id="reading-title">Reading</h2>
+                    <p>Add Markdown notes to <code>resources/notes/reading/</code>.</p>
+                </section>
+
+                <section class="topic-card" id="ideas" aria-labelledby="ideas-title">
+                    <h2 id="ideas-title">Ideas</h2>
+                    <p>Add Markdown notes to <code>resources/notes/ideas/</code>.</p>
+                </section>
+            </div>
+
+            <footer>Return to the <a href="../../index.html">Den</a></footer>
+        </section>
+    </main>
+</body>
+</html>

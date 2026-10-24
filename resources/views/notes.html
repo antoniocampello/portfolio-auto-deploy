@@ -12,38 +12,41 @@
         <section class="main notes-page">
             <header class="notes-header">
                 <h1>Notes</h1>
-                <p>Notes are stored as Markdown files. Open a note to read its source.</p>
             </header>
 
-            <nav class="topic-nav" aria-label="Note topics">
-                <a href="#development">Dev</a>
-                <a href="#reading">Reading</a>
-                <a href="#ideas">Ideas</a>
-            </nav>
+            <div id="notes-content" aria-live="polite">
+                <nav class="topic-nav" aria-label="Note topics">
+                    <a href="#development">Dev</a>
+                    <a href="#reading">Reading</a>
+                    <a href="#ideas">Ideas</a>
+                </nav>
 
-            <div class="topic-grid">
-                <section class="topic-card" id="development" aria-labelledby="development-title">
-                    <h2 id="development-title">Dev</h2>
-                    <article class="note-card">
-                        <p class="note-date">2026-10-24</p>
-                        <h3><a href="../notes/dev/2026-10-24-exemplo.md">My first Markdown note</a></h3>
-                        <p>A small example showing how to add a note to the site.</p>
-                    </article>
-                </section>
+                <!-- Adicionar as notas manualmente. -->
+                <div class="topic-grid">
+                    <section class="topic-card" id="development" aria-labelledby="development-title">
+                        <h2 id="development-title">Dev</h2>
+                        <article class="note-card">
+                            <p class="note-date">2026-10-15</p>
+                            <h3><a href="?note=dev%2Fintro-cloud.md">Introdução à Cloud</a></h3>
+                            <p>Pequeno resumo de elementos chave de computação em nuvem.</p>
+                        </article>
+                    </section>
 
-                <section class="topic-card" id="reading" aria-labelledby="reading-title">
-                    <h2 id="reading-title">Reading</h2>
-                    <p>Add Markdown notes to <code>resources/notes/reading/</code>.</p>
-                </section>
+                    <section class="topic-card" id="reading" aria-labelledby="reading-title">
+                        <h2 id="reading-title">Reading</h2>
+                        <p>Add Markdown notes to <code>resources/notes/reading/</code>.</p>
+                    </section>
 
-                <section class="topic-card" id="ideas" aria-labelledby="ideas-title">
-                    <h2 id="ideas-title">Ideas</h2>
-                    <p>Add Markdown notes to <code>resources/notes/ideas/</code>.</p>
-                </section>
+                    <section class="topic-card" id="ideas" aria-labelledby="ideas-title">
+                        <h2 id="ideas-title">Ideas</h2>
+                        <p>Add Markdown notes to <code>resources/notes/ideas/</code>.</p>
+                    </section>
+                </div>
             </div>
 
             <footer>Return to the <a href="../../index.html">Den</a></footer>
         </section>
     </main>
+    <script src="../js/notes.js" defer></script>
 </body>
 </html>
